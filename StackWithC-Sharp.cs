@@ -55,7 +55,7 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
         public void Print()
         {
             Console.Write("[");
-           for(int i = 0; i <= top; i++)
+           for(int i = top; i >=0; i--)
             {
                 Console.Write(item[i]);
                 if (i == top)
@@ -85,5 +85,5 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
 }
 /********************/
 //OutPut
-// [12,120,1200,12000,120000]
+// [120000,12000,1200,120,12]
 /*******************/
