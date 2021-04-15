@@ -12,11 +12,12 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
         const int Max_Size = 100;
         int top;
         int[] item = new int[Max_Size];
-
+      // initial Top
         public Stack()
         {
             top = -1;
         }
+        // Test If Stack Fully
         Boolean IsFull()
         {
             if (top >= Max_Size - 1)
@@ -24,6 +25,7 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
             else
                 return false;
         }
+        // Add Item
         public void push(int Element)
         {
             if (IsFull())
@@ -31,10 +33,12 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
             else
                 item[++top] = Element;
         }
+        // Test If Stack Empty
         Boolean IsEmpty()
         {
             return top < 0;
         }
+        // Delete Item From Stack
         public void Pop()
         {
             if (IsEmpty())
@@ -47,6 +51,7 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
             Value = item[top];
             return Value;
         }
+        // Print Stack
         public void Print()
         {
             Console.Write("[");
@@ -60,8 +65,6 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
             Console.Write("]");
         }
     }
-
- 
 
 
     class Program
