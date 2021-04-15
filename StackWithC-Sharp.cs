@@ -61,6 +61,8 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
         }
     }
 
+ 
+
 
     class Program
     {
@@ -78,3 +80,7 @@ namespace Data_Structure_Stack_Queue_LinkedList__Algorthim
         }
     }
 }
+/********************/
+//OutPut
+// [12,120,1200,12000,120000]
+/*******************/
